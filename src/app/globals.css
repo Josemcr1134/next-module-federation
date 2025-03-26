@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F6FBFF;
 }
 
 @theme inline {
@@ -14,8 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #F6FBFF;
   }
 }
 
@@ -23,4 +22,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-input {
+  border-radius: 27px;
+  background: #f4f4f4;
+  box-shadow: 0px 3px 4px 0px rgba(94, 118, 154, 0.25) inset;
+  padding: 8px ;
+  width: 100%;
+  color: gray;
+}
+
+
+
+.result-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#e6f2fc ;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  padding: 8px;
+  color: #7E8195;
+  box-shadow: 0px 3px 4px 0px #e6f2fc  inset;
+}
+
+.search-button {
+  background: linear-gradient(90deg, #052540 -7.61%, #FEAA99 168.38%);
+
+  @apply cursor-pointer p-2  w-20 text-center rounded-3xl text-white text-sm font-semibold
 }
